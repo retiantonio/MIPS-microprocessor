@@ -1,0 +1,381 @@
+
+*** Running vivado
+    with args -log MIPS.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source MIPS.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Wed May 28 09:57:17 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source MIPS.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/utils_1/imports/synth_1/MIPS.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/utils_1/imports/synth_1/MIPS.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top MIPS -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 17904
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 972.051 ; gain = 467.352
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'MIPS' [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/MIPS.vhd:44]
+INFO: [Synth 8-3491] module 'MPG' declared at 'E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/MPG.vhd:14' bound to instance 'C1' of component 'MPG' [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/MIPS.vhd:178]
+INFO: [Synth 8-638] synthesizing module 'MPG' [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/MPG.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'MPG' (0#1) [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/MPG.vhd:20]
+INFO: [Synth 8-3491] module 'InstructionFetch' declared at 'E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/InstructionFetch.vhd:34' bound to instance 'C2' of component 'InstructionFetch' [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/MIPS.vhd:180]
+INFO: [Synth 8-638] synthesizing module 'InstructionFetch' [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/InstructionFetch.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'InstructionFetch' (0#1) [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/InstructionFetch.vhd:48]
+INFO: [Synth 8-3491] module 'SevenSegment' declared at 'E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/SevenSegment.vhd:34' bound to instance 'C3' of component 'SevenSegment' [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/MIPS.vhd:195]
+INFO: [Synth 8-638] synthesizing module 'SevenSegment' [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/SevenSegment.vhd:41]
+INFO: [Synth 8-226] default block is never used [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/SevenSegment.vhd:58]
+INFO: [Synth 8-226] default block is never used [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/SevenSegment.vhd:74]
+WARNING: [Synth 8-614] signal 'DIGITS' is read in the process but is not in the sensitivity list [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/SevenSegment.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'SevenSegment' (0#1) [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/SevenSegment.vhd:41]
+INFO: [Synth 8-3491] module 'UC' declared at 'E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/UC.vhd:34' bound to instance 'C4' of component 'UC' [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/MIPS.vhd:197]
+INFO: [Synth 8-638] synthesizing module 'UC' [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/UC.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'UC' (0#1) [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/UC.vhd:49]
+INFO: [Synth 8-3491] module 'InstructionDecoder' declared at 'E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/InstructionDecoder.vhd:35' bound to instance 'C5' of component 'InstructionDecoder' [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/MIPS.vhd:210]
+INFO: [Synth 8-638] synthesizing module 'InstructionDecoder' [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/InstructionDecoder.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'InstructionDecoder' (0#1) [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/InstructionDecoder.vhd:51]
+INFO: [Synth 8-3491] module 'Execution' declared at 'E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/Execution.vhd:36' bound to instance 'C6' of component 'Execution' [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/MIPS.vhd:224]
+INFO: [Synth 8-638] synthesizing module 'Execution' [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/Execution.vhd:52]
+WARNING: [Synth 8-614] signal 'B' is read in the process but is not in the sensitivity list [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/Execution.vhd:83]
+INFO: [Synth 8-256] done synthesizing module 'Execution' (0#1) [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/Execution.vhd:52]
+INFO: [Synth 8-3491] module 'MEM' declared at 'E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/MEM.vhd:35' bound to instance 'C7' of component 'MEM' [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/MIPS.vhd:239]
+INFO: [Synth 8-638] synthesizing module 'MEM' [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/MEM.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'MEM' (0#1) [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/MEM.vhd:46]
+INFO: [Synth 8-226] default block is never used [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/MIPS.vhd:252]
+WARNING: [Synth 8-614] signal 'instruction' is read in the process but is not in the sensitivity list [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/MIPS.vhd:250]
+WARNING: [Synth 8-614] signal 'PCNext' is read in the process but is not in the sensitivity list [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/MIPS.vhd:250]
+WARNING: [Synth 8-614] signal 'readData1' is read in the process but is not in the sensitivity list [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/MIPS.vhd:250]
+WARNING: [Synth 8-614] signal 'readData2' is read in the process but is not in the sensitivity list [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/MIPS.vhd:250]
+WARNING: [Synth 8-614] signal 'extImm' is read in the process but is not in the sensitivity list [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/MIPS.vhd:250]
+WARNING: [Synth 8-614] signal 'ALURes' is read in the process but is not in the sensitivity list [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/MIPS.vhd:250]
+WARNING: [Synth 8-614] signal 'memData' is read in the process but is not in the sensitivity list [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/MIPS.vhd:250]
+WARNING: [Synth 8-614] signal 'writeData' is read in the process but is not in the sensitivity list [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/MIPS.vhd:250]
+INFO: [Synth 8-256] done synthesizing module 'MIPS' (0#1) [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/sources_1/new/MIPS.vhd:44]
+WARNING: [Synth 8-7129] Port switch[4] in module MIPS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port switch[3] in module MIPS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port switch[2] in module MIPS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port switch[1] in module MIPS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port switch[0] in module MIPS is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1078.910 ; gain = 574.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1078.910 ; gain = 574.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1078.910 ; gain = 574.211
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 1078.910 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS_constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'switch[8]'. [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS_constraints.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS_constraints.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch[9]'. [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS_constraints.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS_constraints.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch[10]'. [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS_constraints.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS_constraints.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch[11]'. [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS_constraints.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS_constraints.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch[12]'. [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS_constraints.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS_constraints.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch[13]'. [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS_constraints.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS_constraints.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch[14]'. [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS_constraints.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS_constraints.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch[15]'. [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS_constraints.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS_constraints.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS_constraints.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS_constraints.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS_constraints.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS_constraints.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'button[2]'. [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS_constraints.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS_constraints.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'button[3]'. [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS_constraints.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS_constraints.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'button[4]'. [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS_constraints.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS_constraints.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS_constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/MIPS_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/MIPS_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1095.676 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1095.676 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1095.676 ; gain = 590.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1095.676 ; gain = 590.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1095.676 ; gain = 590.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6895] The reference checkpoint E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.srcs/utils_1/imports/synth_1/MIPS.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1095.676 ; gain = 590.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1095.676 ; gain = 590.977
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1095.676 ; gain = 590.977
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : 
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 3     
+	   3 Input   32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---RAMs : 
+	               2K Bit	(64 X 32 bit)          RAMs := 1     
+	             1024 Bit	(32 X 32 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 5     
+	  33 Input   32 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   9 Input    2 Bit        Muxes := 1     
+	   9 Input    1 Bit        Muxes := 10    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design MIPS has port led[13] driven by constant 0
+WARNING: [Synth 8-7129] Port switch[4] in module MIPS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port switch[3] in module MIPS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port switch[2] in module MIPS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port switch[1] in module MIPS is either unconnected or has no load
+WARNING: [Synth 8-7129] Port switch[0] in module MIPS is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 1166.023 ; gain = 661.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+-----------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object            | Inference | Size (Depth x Width) | Primitives     | 
++------------+-----------------------+-----------+----------------------+----------------+
+|MIPS        | C7/Memory_reg         | Implied   | 64 x 32              | RAM64X1S x 32  | 
+|MIPS        | C5/registerMemory_reg | Implied   | 32 x 32              | RAM32M x 12    | 
++------------+-----------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 1268.812 ; gain = 764.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 1376.004 ; gain = 871.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+-----------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object            | Inference | Size (Depth x Width) | Primitives     | 
++------------+-----------------------+-----------+----------------------+----------------+
+|MIPS        | C7/Memory_reg         | Implied   | 64 x 32              | RAM64X1S x 32  | 
+|MIPS        | C5/registerMemory_reg | Implied   | 32 x 32              | RAM32M x 12    | 
++------------+-----------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:46 . Memory (MB): peak = 1376.004 ; gain = 871.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 1533.570 ; gain = 1028.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 1533.570 ; gain = 1028.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 1533.570 ; gain = 1028.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 1533.570 ; gain = 1028.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 1533.570 ; gain = 1028.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 1533.570 ; gain = 1028.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    42|
+|3     |LUT1     |     3|
+|4     |LUT2     |    32|
+|5     |LUT3     |    74|
+|6     |LUT4     |    90|
+|7     |LUT5     |    93|
+|8     |LUT6     |   162|
+|9     |MUXF7    |    25|
+|10    |RAM32M   |    10|
+|11    |RAM32X1D |     4|
+|12    |RAM64X1S |    32|
+|13    |FDCE     |    32|
+|14    |FDRE     |    38|
+|15    |IBUF     |     6|
+|16    |OBUF     |    29|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 1533.570 ; gain = 1028.871
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:48 . Memory (MB): peak = 1533.570 ; gain = 1012.105
+Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:00:51 . Memory (MB): peak = 1533.570 ; gain = 1028.871
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1542.758 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 113 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1546.410 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 46 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 32 instances
+
+Synth Design complete | Checksum: 8f0ef7d8
+INFO: [Common 17-83] Releasing license: Synthesis
+44 Infos, 35 Warnings, 14 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:55 ; elapsed = 00:01:14 . Memory (MB): peak = 1546.410 ; gain = 1247.211
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1546.410 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'E:/UniversityRelated/Facultate/Anul_2/Semestrul_2/AC/MIPS/MIPS.runs/synth_1/MIPS.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file MIPS_utilization_synth.rpt -pb MIPS_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May 28 09:58:40 2025...
